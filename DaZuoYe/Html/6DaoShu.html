@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ch-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导数</title>
+    <link rel="icon " href="../images/Maths.ico">
+    <link rel="stylesheet" href="../Css/reset.css">
+    <link rel="stylesheet" href="../Css/Detail.css">
+</head>
+
+<body>
+    <div class="toptitle">
+        <nav>
+            <div class="container">
+                <div>
+                    <ul id="nav">
+                        <li class="slide1"></li>
+                        <li class="slide2"></li>
+                        <li><a id="shuxue1" href="1SanJiaoHanShu.html">三角函数</a></li>
+                        <li><a id="shuxue2" href="2LiTiJiHe.html">立体几何</a></li>
+                        <li><a id="shuxue3" href="3ShuLie.html">数列</a></li>
+                        <li><a id="shuxue4" href="4TongJiYuGaiLv.html">统计与概率</a></li>
+                        <li><a id="shuxue5" href="5YuanZhuiQuxian.html">圆锥曲线</a></li>
+                        <li><a id="shuxue6" style="color: #f5f5f5;" href="6DaoShu.html">导数</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+    </nav>
+
+    <div class="larger">
+        <section>
+            <div class="left">
+                <h2>导数核心概念</h2>
+                <div class="content">
+                    <p>研究函数变化率的工具，主要包含：</p>
+                    <div class="concept">
+                        <ul>
+                            <li>导数定义：f'(x) = lim<sub>Δx→0</sub> [f(x+Δx)-f(x)]/Δx</li>
+                            <li>几何意义：曲线切线的斜率</li>
+                            <li>物理意义：瞬时变化率</li>
+                        </ul>
+                    </div>
+                    <div class="concept">
+                        <h3>基本求导法则：</h3>
+                        <p>四则运算：<br>
+                            (u±v)' = u'±v'<br>
+                            (uv)' = u'v + uv'
+                        </p>
+                        <p>复合函数：<br>
+                            链式法则：f(g(x))' = f'(g(x))·g'(x)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <h3 class="righth3">导数公式</h3>
+                    <div class="formula-group">
+                        <div class="formula">幂函数：<br>(x<sup>n</sup>)' = nx<sup>n-1</sup></div>
+                        <div class="formula">指数函数：<br>(e<sup>x</sup>)' = e<sup>x</sup></div>
+                        <div class="formula">对数函数：<br>(lnx)' = 1/x</div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="righth3">定理与应用</h3>
+                    <div class="formula-group">
+                        <div class="formula">中值定理：<br>f(b)-f(a)=f'(ξ)(b-a)</div>
+                        <div class="formula">极值判定：<br>一阶导零且二阶导负→极大值</div>
+                        <div class="formula">单调性：<br>f'(x)&gt;0则函数单调递增</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <a href="../Html/Title.html">
+        <div class="toTitle">
+        </div>
+    </a>
+
+</body>
+<script src="..//Js/Detail.js"></script>
+
+</html>
