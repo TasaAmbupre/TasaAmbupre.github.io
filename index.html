@@ -1,16 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我要吃饭</title>
+    <title>Tasa_Ambupre的主页</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <h3>
-        <a href="./DaZuoYe/Html/Title.html">这里这里</a>
-    </h3>
+    <div class="shell">
+        <ul class="nav">
+            <li class="active" id="logo">
+                <a href="#">
+                    <div class="icon">
+                        <div class="imageBox">
+                            <img src="Indeximgs/user.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text">Tasa_Ambupre</div>
+                </a>
+            </li>
+            <li>
+                <a href="#home">
+                    <div class="icon">
+                        <i class="iconfont icon-cangku"></i>
+                    </div>
+                    <div class="text">神秘介绍</div>
+                </a>
+            </li>
+            <li>
+                <a href="#theme">
+                    <div class="icon">
+                        <i class="iconfont icon-zhuti_tiaosepan"></i>
+                    </div>
+                    <div class="text">空的</div>
+                </a>
+            </li>
+            <li>
+                <a href="#wallet">
+                    <div class="icon">
+                        <i class="iconfont icon-qianbao"></i>
+                    </div>
+                    <div class="text">空的</div>
+                </a>
+            </li>
+            <li>
+                <a href="#picture">
+                    <div class="icon">
+                        <i class="iconfont icon-tupian"></i>
+                    </div>
+                    <div class="text">空的</div>
+                </a>
+            </li>
+            <li>
+                <a href="#code">
+                    <div class="icon">
+                        <i class="iconfont icon-erweima"></i>
+                    </div>
+                    <div class="text">空的</div>
+                </a>
+            </li>
+            <li>
+                <a href="#authentication">
+                    <div class="icon">
+                        <i class="iconfont icon-dunpaibaoxianrenzheng"></i>
+                    </div>
+                    <div class="text">空的</div>
+                </a>
+            </li>
+            <li>
+                <a href="#me">
+                    <div class="icon">
+                        <div class="imageBox">
+                            <!-- <img src="Indeximgs/user.jpg" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="text">空的</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <section id="home">
+        <div>
+            <div class="secontleft">
+                <div>
+                    <h6>这个网站是做什么的？</h6>
+                    <p>
+                        什么都有，就是一个精神病在这里<br>
+                        到处拉屎的一个....嗯对<br>
+                        大便网站
+                    </p>
+                </div>
+                <div>
+                    <h6>
+                        嗯，那我该怎么看呢？
+                    </h6>
+                    <p>
+                        嗯对，大概就是....使用眼睛<br>
+                        然后随便看<br>
+                        就是这样
+                    </p>
+                </div>
+                <div>
+                    <h6>
+                        这个标题我想不出来
+                    </h6>
+                    <p>
+                        嗯先这样吧<br>
+                        这好难啊我不想做了
+                    </p>
+                </div>
+            </div>
+            <div class="secontright">
+                <h6>然后这是<br>作者的一些屎山网页</h6>
+                <ul>
+                    <li><a href="./DaZuoYe/Html/Title.html">一个还没完工的期末大作业</a></li>
+                    <li><a href="#">请输入文本...</a></li>
+                    <li><a href="#">请输入文本...</a></li>
+                    <li><a href="#">请输入文本...</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section id="theme"></section>
+    <section id="wallet"></section>
+    <section id="picture"></section>
+    <section id="code"></section>
+    <section id="authentication"></section>
+    <section id="me"></section>
 </body>
+
+<script>
+    let nav = document.querySelectorAll(".nav li");
+    function activeLink() {
+        nav.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+    }
+    nav.forEach((item) => item.addEventListener("click", activeLink));
+</script>
 
 </html>
