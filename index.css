@@ -6,12 +6,13 @@
             text-decoration: none;
         }
 
-        body {
+        ｝ body {
             background: #e4e9f5;
             overflow: hidden;
         }
 
-        disable-scroll {
+        .disable-scroll {
+            overflow: hidden;
             position: fixed;
             top: 0;
             left: 0;
@@ -46,7 +47,6 @@
             height: 80px;
             text-align: center;
             color: brown;
-
         }
 
         section p {
@@ -59,7 +59,6 @@
             position: relative;
             margin-top: 20px;
             margin-left: 40px;
-            font-family: 'Times New Roman', Times, serif;
             text-align: center;
             flex: 1;
             border-radius: 10px;
@@ -83,7 +82,12 @@
         }
 
         section>div div ul li {
+            text-decoration: dashed;
             color: brown;
+        }
+
+        section>div div ul li a {
+            text-decoration: dashed;
         }
 
         .shell {
@@ -162,8 +166,8 @@
         .shell ul li a {
             position: relative;
             display: flex;
-            white-space: nowrap;
         }
+
 
         .icon {
             position: relative;

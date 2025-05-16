@@ -42,6 +42,43 @@ div.larger {
     z-index: -1;
 }
 
+/* 广告 */
+#bouncing-ad {
+    position: fixed;
+    width: 300px;
+    height: 160px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial;
+    transition: transform 0.2s;
+    font-size: 40px;
+    z-index: 9999;
+}
+
+#close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #ff6b6b;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* 广告 */
+
+
 /* 滑动栏 */
 div.toptitle {
     position: fixed;

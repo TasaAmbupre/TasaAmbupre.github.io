@@ -1,3 +1,59 @@
+// 广告
+const ad = document.getElementById('bouncing-ad');
+const adWidth = ad.offsetWidth;
+const adHeight = ad.offsetHeight;
+
+// 初始化状态
+let posX = Math.random() * (window.innerWidth - adWidth);
+let posY = Math.random() * (window.innerHeight - adHeight);
+
+// 生成随机方向的速度（3-6像素/帧）
+const speed = 2;
+const angle = Math.random() * 2 * Math.PI; // 随机角度
+let speedX = Math.cos(angle) * speed;
+let speedY = Math.sin(angle) * speed;
+
+function updatePosition() {
+    // 更新位置
+    posX += speedX;
+    posY += speedY;
+
+    // 边界碰撞检测
+    const maxX = window.innerWidth - adWidth;
+    const maxY = window.innerHeight - adHeight;
+
+    // 水平边界检测
+    if (posX <= 0) {
+        posX = 0;
+        speedX = Math.abs(speedX); // 向右反弹
+    } else if (posX >= maxX) {
+        posX = maxX;
+        speedX = -Math.abs(speedX); // 向左反弹
+    }
+
+    // 垂直边界检测
+    if (posY <= 0) {
+        posY = 0;
+        speedY = Math.abs(speedY); // 向下反弹
+    } else if (posY >= maxY) {
+        posY = maxY;
+        speedY = -Math.abs(speedY); // 向上反弹
+    }
+
+    // 应用新位置
+    ad.style.left = posX + 'px';
+    ad.style.top = posY + 'px';
+
+    requestAnimationFrame(updatePosition);
+}
+// 启动动画
+updatePosition();
+
+
+
+
+
+// 导航栏
 // 通用样式设置函数
 function setStyles(element, styles) {
     Object.assign(element.style, styles);
