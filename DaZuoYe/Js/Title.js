@@ -1,6 +1,5 @@
-// 获取所有的item元素
+// 切换动画
 var items = document.getElementsByClassName('item');
-// 循环遍历每个item
 for (var i = 0; i < items.length; i++) {
     // 获取当前item
     var item = items[i];
@@ -29,7 +28,6 @@ for (var i = 0; i < items.length; i++) {
         resize();
         move(Math.floor(items.length / 2));
         bindEvents();
-        timer();
     }
     function resize() {
         // 窗口大小变化时调整大小
@@ -74,24 +72,13 @@ for (var i = 0; i < items.length; i++) {
         }
         // 移动slider
         slider.style.transform = "translate3d(" + ((index * -width) + (width / 2) + window.innerWidth / 2) + "px, 0, 0)";
-        // 设置body背景图片
-        var frontBox = items[index - 1].getElementsByClassName('front')[0];
-        document.body.style.backgroundImage = frontBox.style.backgroundImage;
-    }
-    function timer() {
-        // 定时器，自动切换shell
-        clearInterval(interval);
-        interval = setInterval(() => {
-            move(++currIndex);
-        }, intervalTime);
     }
     // 切换item
     function prev() {
         move(--currIndex);
-        timer();
     }
     function next() {
         move(++currIndex);
-        timer();
     }
 })();
+// 切换动画

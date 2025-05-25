@@ -45,9 +45,10 @@ div.larger {
 /* 广告 */
 #bouncing-ad {
     position: fixed;
-    width: 300px;
-    height: 160px;
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    width: 256px;
+    height: 220px;
+    background: url(../images/cat.gif);
+    background-size: contain;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
@@ -135,7 +136,7 @@ div.container {
 #nav li a {
     position: relative;
     padding: 15px 50px;
-    font: 500 24px "优设标题黑";
+    font: 500 24px "微软雅黑";
     border: none;
     outline: none;
     color: rgb(70, 100, 100);

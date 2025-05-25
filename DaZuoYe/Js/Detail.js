@@ -7,9 +7,10 @@ const adHeight = ad.offsetHeight;
 let posX = Math.random() * (window.innerWidth - adWidth);
 let posY = Math.random() * (window.innerHeight - adHeight);
 
-// 生成随机方向的速度（3-6像素/帧）
+// 随机速度
 const speed = 2;
-const angle = Math.random() * 2 * Math.PI; // 随机角度
+// 随机角度
+const angle = Math.random() * 2 * Math.PI;
 let speedX = Math.cos(angle) * speed;
 let speedY = Math.sin(angle) * speed;
 
@@ -48,6 +49,14 @@ function updatePosition() {
 }
 // 启动动画
 updatePosition();
+
+var closead = document.querySelector("div#close-btn");
+closead.addEventListener(onclick, function close() {
+    ad.style.display = "none";
+
+})
+console.log(closead);
+
 
 
 
